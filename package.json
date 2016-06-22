@@ -1,0 +1,28 @@
+{
+    "name": "chrip_15",
+    "id": "chrip_15_main_window",
+    "main": "index.html",
+    "dependencies": {
+	"backbone.modal": "^1.1.5",
+	"getmac": "^1.2.1",
+	"jquery-ui": "^1.10.5",
+	"restify": "^4.1.0",
+	"xml2js": "^0.4.16"
+    },
+    "window": {
+	"fullscreen": false,
+	"focus": true,
+	"title": "Chrip",
+	"always_on_top": false,
+	"frame": false,
+	"exe_icon": "",
+	"visible": true,
+	"as_desktop": false,
+	"mac_icon": "",
+	"show_in_taskbar": true,
+	"transparent": false,
+	"icon": "",
+	"width": 1980,
+	"height": 1080
+    }
+}

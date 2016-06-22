@@ -1,0 +1,13 @@
+
+
+.btn {
+    font-size: 17px;
+}
+
+button i span {
+    font-size: inherit;
+}
+
+i span:before{
+    content: " ";
+}

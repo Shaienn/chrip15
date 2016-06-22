@@ -1,0 +1,234 @@
+svg{ 
+    font-kerning: normal; 
+}
+
+.btn:focus {
+    outline: none !important;
+}
+
+select:focus {
+    outline: none !important;
+}
+
+h2, .h2{
+    font-size: 3em !important;
+}
+
+.fleft {
+    float: left !important;
+}
+
+.fright {
+    float: right !important;
+}
+
+.width-100-percent {
+    width: 100% !important;
+}
+
+.width-70-percent {
+    width: 70% !important;
+}
+
+.width-60-percent {
+    width: 60% !important;
+}
+
+.width-50-percent {
+    width: 50% !important;
+}
+
+.width-30-percent {
+    width: 30% !important;
+}
+
+.width-20-percent {
+    width: 20% !important;
+}
+
+.ia-left, .ia-center, .ia-right{
+    display:flex; 
+}
+
+.ia-left{
+    justify-content: flex-start;
+}
+
+.ia-center{
+    justify-content: center;
+}
+
+.ia-right{
+    justify-content: flex-end;
+}
+
+/*#freeze-mode-btn-container li:nth-child(even){
+    display:none;
+}
+
+#freeze-mode-btn-container li:nth-child(odd){
+    display:block;
+}
+
+#freeze-mode-btn-container.active li:nth-child(even){
+    display:block;
+}
+
+#freeze-mode-btn-container.active li:nth-child(odd){
+    display:none;
+}*/
+
+
+#update-btn{
+    display: none;
+}
+
+#main-window #content {
+    width: 100%;
+    top: 32px;
+    height: calc(100vh - 32px);
+    overflow: hidden;
+    position: absolute;
+}
+
+.white-line{
+    border-bottom: 1px solid white;
+}
+
+/* deprecated */
+.authorItem, .songItem, .playlistItem, .bsgItem {
+    border-top: 1px solid #17181b;
+    border-bottom: 1px solid #17181b;
+    padding: 10px;
+}
+
+.close-icon {
+    color: #ccc;
+    cursor: pointer;
+    z-index: 100;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    float: right;
+}
+
+.close-icon:hover {
+    color: #fff;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; } 
+} 
+
+.blink_element{
+
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+}
+
+.nav > li {
+    position: relative;
+    display: flex;
+}
+
+.main-row{
+    line-height: 39px;
+    height: 39px;
+    color: white;
+}
+
+.main-row h3, .main-row span, .main-row i{
+    line-height:inherit;
+    height: 39px;
+}
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}
+
+*[class*='-element-list'] {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: left;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    -webkit-overflow-scrolling: touch;
+}
+
+*[class*='-element-list']::-webkit-scrollbar {
+    width: 10px;
+}
+
+*[class*='-element-list']::-webkit-scrollbar-track {
+    background-color: #30333c;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+*[class*='-element-list']::-webkit-scrollbar-thumb {
+    background-color: #83888c;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+*[class*='-element-list']::-webkit-scrollbar-thumb:hover {
+    background-color: #93989c;
+}
+
+*[class*='-element-list']::-webkit-resizer,
+*[class*='-element-list']::-webkit-scrollbar-corner,
+*[class*='-element-list']::-webkit-scrollbar-button,
+*[class*='-element-list']::-webkit-scrollbar-track-piece {
+    display: none;
+}
+
+*[class*='-element-list']::-webkit-scrollbar-track {
+    margin-top: 0;
+}
+
+*[class*='-element-item'] {
+    display: inline-block;
+    float: left;
+    width: inherit;
+    font-size: 1em;
+    color: white;
+    background: #122b40;
+    cursor: pointer;
+    margin: 0;
+}
+
+*[class*='-element-item'].passive {
+    background: #668586;
+    opacity: 0.5;
+}
+
+*[class*='-element-item'].active {
+    background: #114c61;
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+    opacity: 1;
+}
+
+*[class*='-element-item'].selected {
+    //border: 2px solid #72aad0;
+    background: #93989c;
+    opacity: 1;
+}
+
+.item-container{
+    border-top: 1px solid #17181b;
+    border-bottom: 1px solid #17181b;
+    padding: 10px;
+}

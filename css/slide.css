@@ -1,0 +1,112 @@
+*[class*='-slide-preview-list'] {
+    width: 100%;
+    height: inherit;
+}
+
+span.italic{
+    font-style: italic;
+}
+
+*[class*='-slide-preview-item'] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+    text-align: center;
+    padding: 2%;
+    white-space: nowrap;
+}
+
+/*.inner-item, .bible-slide-item {
+    display: flex;
+    align-items: center;
+    float: left;
+    width: inherit;
+    height: inherit;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}*/
+
+
+.slide-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-container img{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.slide-container .slide_text,  
+.slide-container .slide-chapter-text, 
+.slide-container .slide-chapter-link
+{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.slide-container .slide_text {
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.slide-container .slide_text span{
+    height: auto !important;
+    width: auto !important;
+    /*float: none !important;*/
+    color: white !important;
+}
+
+*[class*='-slide-preview-item'] .slide-container{
+    -webkit-transform: scale3d(0.9,0.9,0.9) rotate( 0.0001deg);
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+*[class*='-slide-preview-item'].active .slide-container {
+    -webkit-transform: scale3d(1,1,1) rotate( 0.0001deg);
+    -webkit-box-shadow: 1vw 1vh 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1vw 1vh 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1vw 1vh 5px 0px rgba(0, 0, 0, 0.75);
+    filter: alpha(opacity=100);
+    opacity: 1.0;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+
+
+
+
+
+/*.slide-container > * {
+    -webkit-transition: all 500ms
+}
+
+.slide-container.passive > * {
+    opacity: 0.6;
+}
+
+.slide-container.hidden > * {
+    opacity: 0;
+}
+
+.slide-container > * {
+    opacity: 1;*/
+}

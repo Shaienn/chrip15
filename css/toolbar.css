@@ -1,0 +1,64 @@
+/*#main-window-toptoolbar, #songBaseToolbar {
+    float: left;
+}*/
+
+#playlist_bottomtoolbar {
+    position: relative !important;
+    bottom: 0 !important;
+    top: auto !important;
+}
+
+*[class*='toolbar'] {
+    z-index: 10;
+    width: 100%;
+    /* opacity: 0.97; */
+    background-color: #17181b;
+    -webkit-user-select: none;
+    height: 35px;
+    -webkit-box-shadow: 0px 6px 8px -4px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 6px 8px -4px rgba(0, 0, 0, 0.9);
+}
+
+.noshadow {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+*[class*='toolbar'] i {
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    margin: 10px 5px 0;
+    color: #909498;
+    font-size: 1.5em;
+}
+
+*[class*='toolbar'] i:hover {
+    color: #2468cc;
+    cursor: pointer;
+}
+
+*[class*='toolbar'] i.active.favorites {
+    color: #df2d37;
+}
+
+*[class*='toolbar'] i.active.favorites:hover {
+    color: #bc1d26;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+*[class*='toolbar'] i.active.watchlist {
+    color: #2d72d9;
+}
+
+*[class*='toolbar'] i.active.torrent-collection {
+    color: #2d72d9;
+}
+
+*[class*='toolbar'] i.active.about {
+    color: #2468cc;
+}
+
+*[class*='toolbar'] .clear {
+    display: none;
+}
